@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="res/IA-Logo.png">
+    <title>Estado acuario</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="res/IA-Logo.png" width="30" height="30"
+                class="d-inline-block align-top" alt=""> Acuario Inteligente</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Estado acuario<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="estadisticas.html">Estadísticas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- BODY -->
+
+    <p class="display-4">Estado del acuario</p>
+    <p class="lead">
+        Este apartado permite visualizar en tiempo real la información de la pecera, según la información obtenida
+        de la base de datos de Firebase.
+    </p>
+    <hr>
+    <!--Value-->
+    <div class="aligned">
+        <h4 id="text-temperature"><img src="res/temperature-logo.png" width="50" height="50"> Temperatura:</h4>
+    </div>
+    <div class="aligned">
+        <h4 id="text-nivel"><img src="res/waterlevel-logo.png" width="50" height="50"> Nivel:</h4>
+    </div>
+    <div class="aligned">
+        <h4 id="text-ph"><img src="res/ph-logo.png" width="50" height="50"> pH:</h4>
+    </div>
+
+    <!--Child-->
+
+
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <h4><a href="https://www.udem.edu.co/" target="_blank">
+                            <img src="./res/240px-Escudo_Universidad_de_Medellin.svg.png" height="50"></a>
+                        Universidad de Medellín</h4>
+                    <address>
+                        Carrera 87 N° 30 - 65 <br>
+                        Medellín <br>
+                        Colombia <br>
+                        (57)(4)3405555
+                    </address>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="col-md-5">© Copyright 2012 ® Todos los Derechos Reservados</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="http://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/estados.js"></script>
+</body>
+
+</html>
